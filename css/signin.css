@@ -1,0 +1,67 @@
+body
+{
+    background-image: url(../image/back52.jpg);
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content
+{
+    position: absolute;
+    top: 4.5rem;
+    bottom: 4.5rem;
+    left: 24rem;
+    right: 24rem;
+    display: flex;
+    box-shadow: 0px 1px 7px rgba(0,0,0,0.25);
+    background-color: rgba(0,0,0,0.75);
+    border-radius: 0.5rem;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+    padding: 0 10rem;
+    
+}
+
+.heading
+{
+
+    color: white;
+    font-size: 4rem;
+    
+}
+
+.submit
+{
+    padding: 0.8rem 4rem;
+    font-size: 2.4rem;
+    border-radius: 0.5rem;
+    color: white;
+    cursor: pointer;
+    border: none;
+    background-color: green;
+    transition: all 0.25s;
+    margin: 2rem 0;
+}
+
+.submit:hover
+{
+    background: #fff;
+    color: green;
+}
+
+span
+{
+    color: white;
+}
+
+input
+{
+    margin-top: 2rem;
+    padding: 0.6rem 1rem;
+    width: 14rem;
+    border-radius: 0.25rem;
+    box-shadow: 0px 1px 7px rgba(0,0,0,0.25);
+    border: none;
+    font-size: 1rem;
+}

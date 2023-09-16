@@ -4,9 +4,10 @@ var swiper = new Swiper(".product-slider", {
 
     autoplay: {
         loop: true,
-        delay: 7500,
+        delay: 2500,
         disableOnInteraction: false,
     },
+    speed:3000,
  
     breakpoints: {
       0: {
