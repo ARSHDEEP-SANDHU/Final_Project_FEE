@@ -39,7 +39,8 @@ body
 /* CSS CODE for banner*/
 section
 {
-    padding: 2rem 9%;
+    padding: 4rem 9%;
+    /* margin-bottom: 3rem; */
 }
 
 .heading
@@ -62,15 +63,16 @@ section
 
 .btn
 {
-    border: 0.2rem solid var(--black);
+    border: 0 solid var(--black);
     margin-top: 1rem;
     display: inline-block;
     padding: 0.8rem 3rem;
-    font-size: 1.7rem;
+    font-size: 2rem;
     border-radius: 0.5rem;
     color: var(--black);
     cursor: pointer;
     background: none;
+    box-shadow: 0px 1px 7px rgba(0, 100, 0, 0.75);
 }
 
 .btn:hover
@@ -89,26 +91,27 @@ section
     z-index: 1000;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 9%;
+    padding: 2rem 4%;
     background: #fff;
-    box-shadow: var(--box-shadow);
+    box-shadow: 0px 2px 20px lightgreen;
 }
 
 .header .logo 
 {
-    font-size: 2.5rem;
-    font-weight: bolder;
+    margin: -20px 0;
+    padding-right: -100px;
 }
 
-.header .logo i
+.header .logo .groco_logo
 {
-    color: var(--green);
+    width: 24rem;
 }
+
 
 .header .navbar a 
 {
-    font-size: 1.7rem;
-    margin: 0 1rem;
+    font-size: 1.8rem;
+    margin: 0 1.5rem;
     color: var(--black);
 }
 
@@ -119,14 +122,14 @@ section
 
 .header .icons div
 {
-    height: 4.5rem;
-    width: 4.5rem;
-    line-height: 4.5rem;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
     border-radius: 0.5rem;
     background: #eee;
     color: var(--black);
-    font-size: 2rem;
-    margin-right: 0.3rem ;
+    font-size: 2.3rem;
+    margin-right: 0.8rem ;
     text-align: center;
 }
 
@@ -333,25 +336,25 @@ section
 {
     border: 0 solid;
     display: flex;
-    justify-content: center;
-    background: url(../image/banner-img.jpg) no-repeat ;
-    background-position: center;
+    justify-content: right;
+    background: url(../image/banner-img2.jpg) no-repeat ;
+    background-position: contain;
     background-size: cover;
-    padding-top: 17rem;
-    padding-bottom: 10rem;
+    padding-top: 20rem;
+    padding-bottom: 17rem;
 }
 
 .home .content
 {
-    text-align: center;
+    text-align: right;
     border: 0 solid;
-    width: 60rem;
+    width: 80rem;
 }
 
 .home .content h3
 {
     color: var(--black);
-    font-size: 3rem;
+    font-size: 4.4rem;
 }
 
 .home .content span
@@ -367,35 +370,45 @@ section
     line-height: 1.8;
 }
 
+.home .content pre
+{
+    color: var(--light-color);
+    font-size: 1.7rem;
+    line-height: 1.8;
+    margin-bottom: -4rem;
+    text-align: center;
+}
+
 /*features*/
 .features .box-container
 {
     border: 0 solid;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .features .box-container .box
 {
     border: 0 solid red;
-    padding: 3rem 2rem;
+    padding: 4rem 2rem;
     background: #fff;
     outline: var(--outline);
     outline-offset: -1rem;
     text-align: center;
     box-shadow: var(--box-shadow);
+    border-radius: 0.7rem;
 }
 
 .features .box-container .box:hover
 {
-    box-shadow: 0px 0px 9px 4px green;
+    box-shadow: 0px 0px 7px 5px rgb(26, 171, 26);
 }
 
 .features .box-container .box img
 {
     margin: 1rem 0;
-    height: 15rem;
+    height: 20rem;
 }
 
 .features .box-container .box h3
@@ -434,23 +447,24 @@ section
     background: #fff;
     border-radius: .5rem;
     text-align: center;
-    padding: 3rem 2rem;
+    padding: 3.5rem 2rem;
     outline-offset: -1rem;
     outline: var(--outline);
     box-shadow: var(--box-shadow);
     transition: 0.2s linear;
+    margin-right: 1rem;
     
 }
 
 .products .product-slider .box:hover
 {
-    box-shadow: 0px 0px 9px 4px green;
+    box-shadow: 0px 0px 7px 5px rgb(26, 171, 26);
 }
 
 .products .product-slider .box img
 {
-    /* margin: 1rem 0; */
-    height: 20rem;
+    /* margin: 0.5rem 0; */
+    height: 24rem;
 }
 
 .products .product-slider .box h1
@@ -489,7 +503,7 @@ section
 .categories .box-container .box
 {
     border: 0 solid red;
-    padding: 3rem 0;
+    padding: 6rem 0;
     background: #fff;
     outline: var(--outline);
     outline-offset: -1rem;
@@ -540,7 +554,7 @@ section
     background: #fff;
     border-radius: .5rem;
     text-align: center;
-    padding: 8rem 2rem;
+    padding: 6rem 2rem;
     outline-offset: -1rem;
     outline: var(--outline);
     box-shadow: var(--box-shadow);
@@ -555,8 +569,8 @@ section
 
 .review .review-slider .box img
 {
-    width: 15rem;
-    height: 15rem;
+    width: 18rem;
+    height: 18rem;
     border-radius: 50%;
     margin-bottom: 3rem;
 
@@ -613,7 +627,7 @@ section
 
 .blogs .box-container .box .content
 {
-    padding: 2rem;
+    padding: 2.5rem 3.5rem;
 }
 
 .blogs .box-container .box .content .icons
@@ -682,9 +696,9 @@ section
     padding: 1rem 0;
 }
 
-.footer .box-container .box h3 i
+.footer .box-container .box h3 img
 {
-    color: var(--green);
+    width: 25rem;
 }
 
 .footer .box-container .box .links
@@ -761,13 +775,13 @@ section
     color: var(--black);
     border-top: 0.3rem solid rgba(0,0,0,0.1);
     color: rgb(82, 82, 82);
-    font-size: 2.5rem;
+    font-size: 1.7rem;
 }
 
 .footer .credit span
 {
     color: var(--green);
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 
