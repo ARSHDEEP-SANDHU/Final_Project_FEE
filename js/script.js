@@ -93,3 +93,12 @@ windows.onscroll = () =>
     navbar.classList.remove('active');
 };
 
+let tl = gsap.timeline({default: {duration: 0.2}});
+tl 
+    .from(".header",{opacity:0, y:10})
+    .from(".home", {opacity:0, y:10})
+    .from('.features', {opacity:0, y:8})
+    .from(".products", {opacity:0, y:10})
+    .from(".categories", {opacity:0, y:10})
+    .from(".review", {opacity:0, y:10})
+    .from(".blogs", {opacity:0, y:10})
