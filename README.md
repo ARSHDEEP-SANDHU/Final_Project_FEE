@@ -1,6 +1,8 @@
 The Groco
 The Groco Logo
 
+http://localhost:3000
+
 "The Groco" is a collaborative effort by Arshdeep, Arpit, and Arpan developed as the final project for the Frontend Engineering - I (FEE-1) course.
 
 Overview
